@@ -3,6 +3,13 @@
     // Create _the_ container instance
     var c = new Container();
 
+    // ContainerAware with access to the container instance "c"
+    function ContainerAware() {
+        this.container = c;
+    }
+    // Expose ContainerAware
+    window.ContainerAware = ContainerAware;
+
     /**
      * The Container class.
      */

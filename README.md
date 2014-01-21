@@ -61,3 +61,5 @@ The most common usage is to define classes as **Services** with injected depende
 
 - Adds the **Service** method to the Function prototype
 - Adds the **container** method to the Event prototype
+- Adds the **Containerfile** method to the window
+- Adds the **ContainerAware** class to the window that can be extended for access to the container
