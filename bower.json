@@ -1,0 +1,22 @@
+{
+  "name": "Container.js",
+  "version": "dev",
+  "description": "A light weight container for JavaScript",
+  "main": "Container.js",
+  "keywords": [
+    "container",
+    "container.js",
+    "dependency injection",
+    "pimple"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
