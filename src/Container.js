@@ -27,10 +27,6 @@
      * @throws {string} When trying to set window as a dependency
      */
     Container.prototype.set = function(key, value) {
-        // if (value === window) {
-        //     throw 'Cannot set the window as a dependency! Do you want infinite containers?'; 
-        // }
-
         // if it's a function, we need to inject the container
         if (Object.prototype.toString.call(value) === '[object Function]') {
             value = value(this);
