@@ -71,6 +71,8 @@
     /**
      * Extends the Function prototype with a Service method.
      * This method enables converting the class context into a Service in the container.
+     * To prevent duplicate Service invocations AND to expose the service name, the property
+     * "Service" is set to the value of "key" at the end of this method.
      * 
      * @param {string} key The key of the service.
      * @param {array} depedencyKeys The keys of the dependencies of this item.
@@ -114,6 +116,9 @@
 
             return createKlass(dependencies);
         });
+
+        // Override this method with the key!
+        klass.Service = key;
 
         return klass;
     };
